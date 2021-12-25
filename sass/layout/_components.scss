@@ -1,0 +1,87 @@
+.btn {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: $blue;
+  color: $white;
+  box-shadow: $d_shadow;
+  margin-bottom: $d-space;
+  opacity: 0.9;
+
+  &:hover:enabled {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  font: {
+    weight: 600;
+    family: "Poppins", sans-serif;
+  }
+
+  span {
+    font-weight: 400;
+  }
+}
+
+form {
+  background: $white;
+  border-radius: 5px;
+  box-shadow: $d_shadow;
+  padding: $d-space * 2 {
+    top: $d-space;
+  }
+
+  input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 0.5px solid $g-blue;
+    font-weight: 600;
+    margin-top: $d-space;
+
+    &:hover {
+      border-color: $blue;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $blue;
+      color: $d-blue;
+    }
+
+    &.empty {
+      border-color: $red;
+    }
+  }
+  .empty-msg {
+    color: $red;
+    font-size: 0.65rem;
+    float: right;
+    font-style: italic;
+  }
+
+  .btn {
+    background: $green;
+    text-transform: uppercase;
+    margin-top: $d-space;
+  }
+
+  p {
+    font-size: 0.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: $g-blue;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: $red;
+    }
+  }
+}

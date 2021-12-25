@@ -1,0 +1,50 @@
+.container {
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  .left {
+    flex: 1;
+    @include centering;
+
+    .textContainer {
+      width: 70%;
+      color: $white;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: $d-space;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .right {
+    flex: 1;
+    max-width: 50%;
+    padding: $d-space $d-space * 5;
+  }
+
+  @media (max-width: 1083px) {
+    display: inline;
+
+    .right {
+      max-width: 100%;
+      padding: 50px;
+    }
+
+    .left {
+      text-align: center;
+
+      .textContainer {
+        width: 80%;
+      }
+    }
+  }
+}

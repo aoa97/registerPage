@@ -1,0 +1,27 @@
+// Centering a container's content
+@mixin centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Media Queries' Breakpoints
+@mixin device($size) {
+  @if $size == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == small {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $size == medium {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $size == large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
